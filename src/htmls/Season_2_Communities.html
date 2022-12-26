@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 950px;
+                 height: 800px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "white"}, "group": 2, "id": "Walter", "label": "Walter", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Jesse", "label": "Jesse", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "No-Doze", "label": "No-Doze", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Tuco Salamanca", "label": "Tuco Salamanca", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Skyler", "label": "Skyler", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Marie", "label": "Marie", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Hank", "label": "Hank", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Gonzo", "label": "Gonzo", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Louis", "label": "Louis", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Gomez", "label": "Gomez", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Albuquerque", "label": "Albuquerque", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Delcavoli", "label": "Delcavoli", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Badger", "label": "Badger", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Clovis", "label": "Clovis", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Elliott", "label": "Elliott", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Gretchen", "label": "Gretchen", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Skinny Pete", "label": "Skinny Pete", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Carmen Molina", "label": "Carmen Molina", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Spooge", "label": "Spooge", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Combo", "label": "Combo", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Jane Margolis", "label": "Jane Margolis", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Saul Goodman", "label": "Saul Goodman", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Jimmy", "label": "Jimmy", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "DEA", "label": "DEA", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Denny", "label": "Denny", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Tortuga", "label": "Tortuga", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Ted Beneke", "label": "Ted Beneke", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Bravenec", "label": "Bravenec", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Gus Fring", "label": "Gus Fring", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Walt Jr.", "label": "Walt Jr.", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Donald Margolis", "label": "Donald Margolis", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Mike", "label": "Mike", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Wendy", "label": "Wendy", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Hector Salamanca", "label": "Hector Salamanca", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Gardiner", "label": "Gardiner", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Paul", "label": "Paul", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Vanco", "label": "Vanco", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "SAC Ramey", "label": "SAC Ramey", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "ASAC George Merkert", "label": "ASAC George Merkert", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 1, "id": "Merkert", "label": "Merkert", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 2, "id": "Soper", "label": "Soper", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "group": 0, "id": "Getz", "label": "Getz", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "Walter", "to": "Jesse", "value": 501, "width": 1}, {"from": "Walter", "to": "No-Doze", "value": 14, "width": 1}, {"from": "Walter", "to": "Tuco Salamanca", "value": 102, "width": 1}, {"from": "Walter", "to": "Skyler", "value": 205, "width": 1}, {"from": "Walter", "to": "Marie", "value": 47, "width": 1}, {"from": "Walter", "to": "Hank", "value": 74, "width": 1}, {"from": "Walter", "to": "Gonzo", "value": 4, "width": 1}, {"from": "Walter", "to": "Louis", "value": 5, "width": 1}, {"from": "Walter", "to": "Gomez", "value": 6, "width": 1}, {"from": "Walter", "to": "Albuquerque", "value": 5, "width": 1}, {"from": "Walter", "to": "Delcavoli", "value": 11, "width": 1}, {"from": "Walter", "to": "Badger", "value": 11, "width": 1}, {"from": "Walter", "to": "Clovis", "value": 4, "width": 1}, {"from": "Walter", "to": "Elliott", "value": 20, "width": 1}, {"from": "Walter", "to": "Gretchen", "value": 46, "width": 1}, {"from": "Walter", "to": "Skinny Pete", "value": 5, "width": 1}, {"from": "Walter", "to": "Carmen Molina", "value": 5, "width": 1}, {"from": "Walter", "to": "Spooge", "value": 20, "width": 1}, {"from": "Walter", "to": "Combo", "value": 26, "width": 1}, {"from": "Walter", "to": "Jane Margolis", "value": 68, "width": 1}, {"from": "Walter", "to": "Saul Goodman", "value": 59, "width": 1}, {"from": "Walter", "to": "Jimmy", "value": 5, "width": 1}, {"from": "Walter", "to": "DEA", "value": 4, "width": 1}, {"from": "Walter", "to": "Denny", "value": 5, "width": 1}, {"from": "Walter", "to": "Tortuga", "value": 5, "width": 1}, {"from": "Walter", "to": "Ted Beneke", "value": 10, "width": 1}, {"from": "Walter", "to": "Bravenec", "value": 6, "width": 1}, {"from": "Walter", "to": "Gus Fring", "value": 5, "width": 1}, {"from": "Walter", "to": "Walt Jr.", "value": 11, "width": 1}, {"from": "Walter", "to": "Donald Margolis", "value": 5, "width": 1}, {"from": "Walter", "to": "Mike", "value": 5, "width": 1}, {"from": "Jesse", "to": "Tuco Salamanca", "value": 102, "width": 1}, {"from": "Jesse", "to": "Skyler", "value": 34, "width": 1}, {"from": "Jesse", "to": "Hank", "value": 63, "width": 1}, {"from": "Jesse", "to": "No-Doze", "value": 5, "width": 1}, {"from": "Jesse", "to": "DEA", "value": 32, "width": 1}, {"from": "Jesse", "to": "Gomez", "value": 10, "width": 1}, {"from": "Jesse", "to": "Gonzo", "value": 6, "width": 1}, {"from": "Jesse", "to": "Albuquerque", "value": 11, "width": 1}, {"from": "Jesse", "to": "Badger", "value": 27, "width": 1}, {"from": "Jesse", "to": "Clovis", "value": 9, "width": 1}, {"from": "Jesse", "to": "Wendy", "value": 6, "width": 1}, {"from": "Jesse", "to": "Hector Salamanca", "value": 6, "width": 1}, {"from": "Jesse", "to": "Gardiner", "value": 11, "width": 1}, {"from": "Jesse", "to": "Paul", "value": 5, "width": 1}, {"from": "Jesse", "to": "Jane Margolis", "value": 117, "width": 1}, {"from": "Jesse", "to": "Skinny Pete", "value": 18, "width": 1}, {"from": "Jesse", "to": "Combo", "value": 5, "width": 1}, {"from": "Jesse", "to": "Spooge", "value": 49, "width": 1}, {"from": "Jesse", "to": "Gretchen", "value": 5, "width": 1}, {"from": "Jesse", "to": "Vanco", "value": 10, "width": 1}, {"from": "Jesse", "to": "Marie", "value": 5, "width": 1}, {"from": "Jesse", "to": "Ted Beneke", "value": 10, "width": 1}, {"from": "Jesse", "to": "Saul Goodman", "value": 21, "width": 1}, {"from": "Jesse", "to": "Jimmy", "value": 5, "width": 1}, {"from": "Jesse", "to": "Denny", "value": 5, "width": 1}, {"from": "Jesse", "to": "Delcavoli", "value": 5, "width": 1}, {"from": "Jesse", "to": "Donald Margolis", "value": 20, "width": 1}, {"from": "Jesse", "to": "Mike", "value": 5, "width": 1}, {"from": "Tuco Salamanca", "to": "No-Doze", "value": 5, "width": 1}, {"from": "Tuco Salamanca", "to": "Gonzo", "value": 6, "width": 1}, {"from": "Tuco Salamanca", "to": "Hank", "value": 59, "width": 1}, {"from": "Tuco Salamanca", "to": "DEA", "value": 5, "width": 1}, {"from": "Tuco Salamanca", "to": "Skyler", "value": 5, "width": 1}, {"from": "Tuco Salamanca", "to": "SAC Ramey", "value": 6, "width": 1}, {"from": "Tuco Salamanca", "to": "Delcavoli", "value": 5, "width": 1}, {"from": "Tuco Salamanca", "to": "ASAC George Merkert", "value": 6, "width": 1}, {"from": "Tuco Salamanca", "to": "Badger", "value": 5, "width": 1}, {"from": "No-Doze", "to": "Gonzo", "value": 12, "width": 1}, {"from": "Gonzo", "to": "Hank", "value": 5, "width": 1}, {"from": "Gonzo", "to": "DEA", "value": 12, "width": 1}, {"from": "Skyler", "to": "Marie", "value": 28, "width": 1}, {"from": "Skyler", "to": "Hank", "value": 11, "width": 1}, {"from": "Skyler", "to": "Louis", "value": 6, "width": 1}, {"from": "Skyler", "to": "Albuquerque", "value": 11, "width": 1}, {"from": "Skyler", "to": "DEA", "value": 5, "width": 1}, {"from": "Skyler", "to": "Gretchen", "value": 18, "width": 1}, {"from": "Skyler", "to": "Ted Beneke", "value": 34, "width": 1}, {"from": "Skyler", "to": "Delcavoli", "value": 12, "width": 1}, {"from": "Skyler", "to": "Jane Margolis", "value": 5, "width": 1}, {"from": "Skyler", "to": "Donald Margolis", "value": 10, "width": 1}, {"from": "Skyler", "to": "Walt Jr.", "value": 6, "width": 1}, {"from": "Skyler", "to": "Bravenec", "value": 5, "width": 1}, {"from": "Marie", "to": "Hank", "value": 28, "width": 1}, {"from": "Marie", "to": "Jane Margolis", "value": 10, "width": 1}, {"from": "Marie", "to": "Ted Beneke", "value": 5, "width": 1}, {"from": "Hank", "to": "Gomez", "value": 17, "width": 1}, {"from": "Hank", "to": "DEA", "value": 23, "width": 1}, {"from": "Hank", "to": "Badger", "value": 12, "width": 1}, {"from": "Hank", "to": "Wendy", "value": 6, "width": 1}, {"from": "Hank", "to": "Hector Salamanca", "value": 6, "width": 1}, {"from": "Hank", "to": "ASAC George Merkert", "value": 5, "width": 1}, {"from": "Hank", "to": "Albuquerque", "value": 5, "width": 1}, {"from": "Hank", "to": "Clovis", "value": 5, "width": 1}, {"from": "Hank", "to": "Vanco", "value": 5, "width": 1}, {"from": "Hank", "to": "Tortuga", "value": 5, "width": 1}, {"from": "Hank", "to": "Jane Margolis", "value": 5, "width": 1}, {"from": "Hank", "to": "Saul Goodman", "value": 5, "width": 1}, {"from": "Hank", "to": "Combo", "value": 5, "width": 1}, {"from": "Gomez", "to": "Albuquerque", "value": 5, "width": 1}, {"from": "Gomez", "to": "Saul Goodman", "value": 6, "width": 1}, {"from": "DEA", "to": "ASAC George Merkert", "value": 6, "width": 1}, {"from": "DEA", "to": "Merkert", "value": 5, "width": 1}, {"from": "DEA", "to": "Albuquerque", "value": 6, "width": 1}, {"from": "DEA", "to": "Badger", "value": 10, "width": 1}, {"from": "DEA", "to": "Saul Goodman", "value": 6, "width": 1}, {"from": "Albuquerque", "to": "Badger", "value": 6, "width": 1}, {"from": "Albuquerque", "to": "Merkert", "value": 6, "width": 1}, {"from": "ASAC George Merkert", "to": "SAC Ramey", "value": 6, "width": 1}, {"from": "Badger", "to": "Clovis", "value": 6, "width": 1}, {"from": "Badger", "to": "Soper", "value": 5, "width": 1}, {"from": "Badger", "to": "Skinny Pete", "value": 18, "width": 1}, {"from": "Badger", "to": "Combo", "value": 30, "width": 1}, {"from": "Badger", "to": "Jane Margolis", "value": 5, "width": 1}, {"from": "Badger", "to": "Getz", "value": 11, "width": 1}, {"from": "Badger", "to": "Saul Goodman", "value": 5, "width": 1}, {"from": "Badger", "to": "Jimmy", "value": 12, "width": 1}, {"from": "Soper", "to": "Delcavoli", "value": 6, "width": 1}, {"from": "Delcavoli", "to": "Bravenec", "value": 11, "width": 1}, {"from": "Elliott", "to": "Gretchen", "value": 24, "width": 1}, {"from": "Jane Margolis", "to": "Jimmy", "value": 5, "width": 1}, {"from": "Jane Margolis", "to": "Donald Margolis", "value": 52, "width": 1}, {"from": "Jane Margolis", "to": "Combo", "value": 10, "width": 1}, {"from": "Skinny Pete", "to": "Combo", "value": 11, "width": 1}, {"from": "Getz", "to": "Saul Goodman", "value": 6, "width": 1}, {"from": "Donald Margolis", "to": "Mike", "value": 5, "width": 1}, {"from": "Donald Margolis", "to": "Bravenec", "value": 5, "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
