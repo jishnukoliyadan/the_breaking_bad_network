@@ -1,0 +1,126 @@
+source,target,weight,community
+Denny,Walter,1,0
+Walter,Lawson,15,0
+Walter,Brock,17,0
+Walter,Skyler,119,0
+Walter,Hank,46,0
+Walter,Gomez,11,0
+Walter,Barry Goodman,5,0
+Walter,Jesse,226,0
+Walter,Mike,163,0
+Walter,Ted Beneke,15,0
+Walter,Huell Babineaux,5,0
+Walter,DEA,10,0
+Walter,Max Arciniega,5,0
+Walter,Saul Goodman,26,0
+Walter,Peter Schuler,4,0
+Walter,Gale Boetticher,5,0
+Walter,Andrea Cantillo,11,0
+Walter,Todd Alquist,64,0
+Walter,Marie,28,0
+Walter,Walt Jr.,6,0
+Walter,Victor,5,0
+Walter,Ron,5,0
+Walter,Lydia,17,0
+Walter,Kuby,6,0
+Walter,Declan,29,0
+Walter,Dan Wachsberger,5,0
+Walter,Kaylee,5,0
+Walter,Jack Welker,11,0
+Brock,Walt Jr.,5,1
+Brock,Mike,5,1
+Brock,Andrea Cantillo,5,1
+Brock,Jesse,6,1
+Walt Jr.,Hank,6,1
+Walt Jr.,Skyler,5,1
+Walt Jr.,Madrigal,5,1
+Walt Jr.,Marie,6,1
+Walt Jr.,Jesse,5,1
+Hank,Skyler,16,2
+Hank,Gomez,6,2
+Hank,Mike,56,2
+Hank,DEA,24,2
+Hank,Merkert,6,2
+Hank,Gus Fring,5,2
+Hank,Marie,18,2
+Hank,SAC Ramey,6,2
+Hank,ASAC George Merkert,6,2
+Hank,Albuquerque,6,2
+Hank,Lydia,6,2
+Hank,Dan Wachsberger,6,2
+Hank,Jesse,5,2
+Hank,Dennis Markowski,6,2
+Hank,Jack Welker,5,2
+Hank,Saul Goodman,5,2
+Skyler,Saul Goodman,6,1
+Skyler,Ted Beneke,22,1
+Skyler,Mike,5,1
+Skyler,DEA,5,1
+Skyler,Marie,28,1
+Skyler,Jesse,4,1
+Skyler,Lydia,5,1
+Gomez,ASAC George Merkert,6,2
+Gomez,Merkert,6,2
+Gomez,Mike,5,2
+Gomez,Gus Fring,6,2
+Gomez,Dan Wachsberger,6,2
+Gomez,DEA,6,2
+Mike,Cartel,5,3
+Mike,Jesse,82,3
+Mike,Joe,5,3
+Mike,DEA,24,3
+Mike,Lydia,21,3
+Mike,Gus Fring,10,3
+Mike,Kaylee,16,3
+Mike,Chris,20,3
+Mike,Chow,5,3
+Mike,Dennis Markowski,6,3
+Mike,Dan Wachsberger,24,3
+Mike,Saul Goodman,22,3
+Mike,Skinny Pete,5,3
+Mike,Ron,6,3
+Mike,SAC Ramey,6,3
+Mike,Albuquerque,5,3
+Mike,Kuby,6,3
+Mike,Todd Alquist,6,3
+Mike,Declan,6,3
+Cartel,Barry Goodman,5,3
+Jesse,Joe,4,1
+Jesse,Saul Goodman,22,1
+Jesse,Ted Beneke,5,1
+Jesse,Jack Welker,5,1
+Jesse,Peter Schuler,5,1
+Jesse,Badger,5,1
+Jesse,Todd Alquist,42,1
+Jesse,Andrea Cantillo,6,1
+Jesse,Marie,10,1
+Jesse,Madrigal,6,1
+Jesse,Lydia,6,1
+Jesse,Kuby,5,1
+Jesse,Declan,5,1
+Jesse,DEA,5,1
+Jesse,Kaylee,5,1
+Saul Goodman,Max Arciniega,5,0
+Saul Goodman,Huell Babineaux,6,0
+Saul Goodman,DEA,5,0
+Ted Beneke,Kuby,5,1
+Ted Beneke,Marie,5,1
+Huell Babineaux,Kuby,6,0
+Kuby,Todd Alquist,5,0
+DEA,Madrigal,6,2
+DEA,Lydia,11,2
+Jack Welker,Todd Alquist,6,0
+ASAC George Merkert,Madrigal,6,2
+ASAC George Merkert,Albuquerque,6,2
+Madrigal,Lydia,5,2
+Lydia,Merkert,5,2
+Lydia,Chris,6,2
+Lydia,Dennis Markowski,5,2
+Lydia,Declan,6,2
+Gus Fring,Dan Wachsberger,6,2
+Kaylee,Chris,5,3
+Dennis Markowski,Dan Wachsberger,6,2
+Dan Wachsberger,Todd Alquist,5,2
+Skinny Pete,Badger,6,3
+Andrea Cantillo,Marie,5,1
+Todd Alquist,Declan,6,0

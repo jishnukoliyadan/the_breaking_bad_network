@@ -1,0 +1,133 @@
+source,target,weight,community
+Albuquerque,Donald Margolis,1,1
+Albuquerque,Walter,10,1
+Albuquerque,Hank,11,1
+Albuquerque,Leonel Salamanca,5,1
+Albuquerque,Francesca,6,1
+Donald Margolis,Walter,6,1
+Donald Margolis,Jane Margolis,6,1
+Walter,Skyler,207,1
+Walter,Hank,96,1
+Walter,Jesse,436,1
+Walter,Walt Jr.,5,1
+Walter,Cousins,46,1
+Walter,Marie,21,1
+Walter,DEA,15,1
+Walter,Saul Goodman,69,1
+Walter,Mike,67,1
+Walter,Ted Beneke,27,1
+Walter,Leonel Salamanca,16,1
+Walter,Marco,5,1
+Walter,Tuco Salamanca,18,1
+Walter,Bolsa,11,1
+Walter,Carmen,5,1
+Walter,Merkert,5,1
+Walter,Jane Margolis,6,1
+Walter,Badger,5,1
+Walter,Gale Boetticher,56,1
+Walter,Clovis,6,1
+Walter,Old Joe,6,1
+Walter,Joe,5,1
+Walter,Gomez,16,1
+Walter,Victor,27,1
+Walter,Andrea Cantillo,5,1
+Walter,Combo,11,1
+Walter,Wendy,6,1
+Skyler,Hank,32,2
+Skyler,Walt Jr.,11,2
+Skyler,Jesse,6,2
+Skyler,Marie,22,2
+Skyler,Cousins,5,2
+Skyler,Tuco Salamanca,5,2
+Skyler,Ted Beneke,43,2
+Skyler,DEA,5,2
+Skyler,Saul Goodman,17,2
+Skyler,Combo,5,2
+Hank,DEA,23,0
+Hank,Marie,122,0
+Hank,Jane Margolis,10,0
+Hank,Gomez,56,0
+Hank,Merkert,22,0
+Hank,Jesse,98,0
+Hank,Victor,5,0
+Hank,Janice,6,0
+Hank,Combo,11,0
+Hank,Ortega,6,0
+Hank,Skinny Pete,6,0
+Hank,Badger,6,0
+Hank,Saul Goodman,5,0
+Hank,Cousins,17,0
+Hank,Joe,6,0
+Hank,Hector Salamanca,5,0
+Hank,Tuco Salamanca,6,0
+Hank,Leonel Salamanca,16,0
+Hank,Marco,21,0
+Hank,Bolsa,6,0
+Jesse,Marie,21,3
+Jesse,Jane Margolis,35,3
+Jesse,Cousins,10,3
+Jesse,Saul Goodman,88,3
+Jesse,Marco,5,3
+Jesse,DEA,10,3
+Jesse,Ted Beneke,5,3
+Jesse,Victor,22,3
+Jesse,Skinny Pete,33,3
+Jesse,Combo,11,3
+Jesse,Badger,10,3
+Jesse,Gale Boetticher,10,3
+Jesse,Merkert,6,3
+Jesse,Leonel Salamanca,5,3
+Jesse,Tuco Salamanca,5,3
+Jesse,Gomez,4,3
+Jesse,Andrea Cantillo,21,3
+Jesse,Brock,5,3
+Jesse,Wendy,16,3
+Jesse,Mike,22,3
+Cousins,Victor,5,2
+Cousins,DEA,5,2
+Cousins,Tortuga,6,2
+Cousins,Gomez,5,2
+Cousins,Hector Salamanca,6,2
+Cousins,Bolsa,12,2
+Cousins,Mike,6,2
+Cousins,Tuco Salamanca,5,2
+Cousins,Marco,5,2
+Cousins,Juan Bolsa,6,2
+Marie,Gomez,18,2
+Marie,DEA,4,2
+Marie,Juan Bolsa,5,2
+Marie,Bolsa,5,2
+DEA,Tortuga,5,2
+DEA,Gomez,12,2
+DEA,Merkert,5,2
+DEA,Bolsa,6,2
+Saul Goodman,Mike,29,1
+Saul Goodman,Francesca,6,1
+Mike,Marco,6,3
+Mike,Victor,18,3
+Mike,Tortuga,5,3
+Mike,Ted Beneke,5,3
+Mike,Leonel Salamanca,12,3
+Mike,Gomez,5,3
+Mike,Patrick,5,3
+Mike,Gale Boetticher,6,3
+Mike,Chow,5,3
+Marco,Leonel Salamanca,45,3
+Leonel Salamanca,Hector Salamanca,5,3
+Leonel Salamanca,Bolsa,5,3
+Hector Salamanca,Tuco Salamanca,6,2
+Hector Salamanca,Juan Bolsa,6,2
+Tuco Salamanca,Bolsa,6,2
+Victor,Gale Boetticher,17,3
+Tortuga,Juan Bolsa,6,2
+Tortuga,Bolsa,5,2
+Gomez,Janice,5,0
+Gomez,Merkert,11,0
+Skinny Pete,Combo,6,0
+Skinny Pete,Badger,6,0
+Combo,Ortega,6,0
+Combo,Andrea Cantillo,6,0
+Badger,Clovis,6,0
+Badger,Andrea Cantillo,5,0
+Andrea Cantillo,Brock,10,0
+Wendy,Patrick,6,3

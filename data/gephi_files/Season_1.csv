@@ -1,0 +1,65 @@
+source,target,weight,community
+Albuquerque,Walter,2,0
+Albuquerque,DEA,6,0
+Albuquerque,Hank,6,0
+Walter,Skyler,86,1
+Walter,Walt Jr.,5,1
+Walter,Hank,73,1
+Walter,Bogdan,5,1
+Walter,Steven Gomez,6,1
+Walter,Cook,6,1
+Walter,Jesse,289,1
+Walter,Gomez,5,1
+Walter,Emilio,55,1
+Walter,Marie,11,1
+Walter,DEA,11,1
+Walter,Ken,6,1
+Walter,Combo,5,1
+Walter,Delcavoli,5,1
+Walter,Jake,5,1
+Walter,Elliott,22,1
+Walter,Gretchen,4,1
+Walter,Badger,10,1
+Walter,Hugo,5,1
+Walter,Tuco Salamanca,73,1
+Walter,Skinny Pete,6,1
+Skyler,Walt Jr.,5,0
+Skyler,Marie,12,0
+Skyler,Jesse,22,0
+Skyler,Emilio,6,0
+Skyler,DEA,4,0
+Skyler,Hank,23,0
+Skyler,Delcavoli,5,0
+Skyler,Elliott,22,0
+Skyler,Hugo,5,0
+Hank,DEA,5,0
+Hank,Marie,12,0
+Hank,Bogdan,5,0
+Hank,Steven Gomez,5,0
+Hank,Gomez,11,0
+Hank,Jesse,6,0
+Hank,Wendy,5,0
+Hank,Tuco Salamanca,5,0
+Hank,Hugo,6,0
+DEA,Jesse,6,0
+DEA,Hugo,6,0
+Marie,Jesse,5,0
+Gomez,Cook,6,1
+Gomez,Jesse,5,1
+Jesse,Emilio,5,3
+Jesse,Wendy,6,3
+Jesse,Combo,6,3
+Jesse,Skinny Pete,12,3
+Jesse,Ken,5,3
+Jesse,Jake,22,3
+Jesse,Badger,16,3
+Jesse,Elliott,5,3
+Jesse,Tuco Salamanca,40,3
+Jesse,Hugo,5,3
+Jesse,Hospital,6,3
+Combo,Skinny Pete,6,3
+Skinny Pete,Tuco Salamanca,12,3
+Delcavoli,Tuco Salamanca,5,2
+Elliott,Gretchen,6,1
+Tuco Salamanca,Hospital,5,2
+Tuco Salamanca,No-Doze,6,2
