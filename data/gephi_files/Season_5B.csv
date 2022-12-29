@@ -1,16 +1,16 @@
 source,target,weight,community
 Walter,Carol,3,0
-Walter,Hank,172,0
+Walter,Hank,177,0
 Walter,Marie,72,0
-Walter,Lydia,30,0
+Walter,Lydia,32,0
 Walter,Skyler,86,0
-Walter,Jesse,299,0
-Walter,Saul Goodman,47,0
+Walter,Jesse,304,0
+Walter,Saul Goodman,48,0
 Walter,Mike,18,0
 Walter,Huell Babineaux,22,0
 Walter,Kuby,17,0
 Walter,DEA,11,0
-Walter,Todd Alquist,43,0
+Walter,Todd Alquist,45,0
 Walter,Declan,6,0
 Walter,Jack Welker,91,0
 Walter,Walt Jr.,15,0
@@ -25,78 +25,78 @@ Walter,Jane Margolis,6,0
 Walter,Ed,46,0
 Walter,Ramey,6,0
 Walter,Louis,5,0
-Walter,Albuquerque,4,0
-Walter,Gretchen,24,0
-Walter,Elliott,15,0
+Walter,Albuquerque,5,0
+Walter,Gretchen,25,0
+Walter,Elliott,16,0
 Walter,Skinny Pete,6,0
 Walter,Badger,5,0
 Walter,Denny,6,0
 Walter,Lawson,5,0
-Carol,Hank,3,0
-Hank,Marie,77,2
-Hank,Skyler,11,2
-Hank,Gale Boetticher,6,2
-Hank,Lydia,5,2
-Hank,DEA,12,2
-Hank,Mike,6,2
-Hank,Hector Salamanca,5,2
-Hank,Jesse,72,2
-Hank,Saul Goodman,11,2
-Hank,Declan,5,2
-Hank,Albuquerque,6,2
-Hank,Jack Welker,12,2
-Hank,Walt Jr.,5,2
-Hank,Salamanca,6,2
-Hank,Gomez,92,2
-Hank,Todd Alquist,5,2
-Hank,Huell Babineaux,6,2
-Hank,Kuby,5,2
-Hank,Kenny,5,2
-Hank,Gang,5,2
-Marie,Skyler,24,3
-Marie,DEA,6,3
-Marie,Walt Jr.,12,3
-Marie,Jesse,5,3
-Marie,Ramey,6,3
-Skyler,Lydia,5,3
-Skyler,DEA,5,3
-Skyler,Walt Jr.,11,3
-Skyler,Saul Goodman,15,3
-Skyler,Jesse,17,3
-Skyler,Bogdan,6,3
-Skyler,Jack Welker,5,3
-Skyler,Todd Alquist,11,3
-Skyler,Ed,6,3
-Gale Boetticher,Lydia,5,2
-Lydia,Declan,5,2
-Lydia,Kenny,6,2
-Lydia,Todd Alquist,29,2
-Lydia,Jack Welker,5,2
-Lydia,Jesse,5,2
-DEA,Jesse,17,3
-DEA,Gomez,6,3
-DEA,Jack Welker,5,3
-DEA,SAC Ramey,6,3
-DEA,Ramey,6,3
-DEA,Albuquerque,6,3
+Carol,Hank,3,1
+Hank,Marie,78,1
+Hank,Skyler,11,1
+Hank,Gale Boetticher,6,1
+Hank,Lydia,5,1
+Hank,DEA,12,1
+Hank,Mike,6,1
+Hank,Hector Salamanca,5,1
+Hank,Jesse,73,1
+Hank,Saul Goodman,11,1
+Hank,Declan,5,1
+Hank,Albuquerque,6,1
+Hank,Jack Welker,12,1
+Hank,Walt Jr.,5,1
+Hank,Salamanca,6,1
+Hank,Gomez,95,1
+Hank,Todd Alquist,5,1
+Hank,Huell Babineaux,6,1
+Hank,Kuby,5,1
+Hank,Kenny,5,1
+Hank,Gang,5,1
+Marie,Skyler,24,2
+Marie,DEA,6,2
+Marie,Walt Jr.,12,2
+Marie,Jesse,6,2
+Marie,Ramey,6,2
+Skyler,Lydia,5,2
+Skyler,DEA,5,2
+Skyler,Walt Jr.,11,2
+Skyler,Saul Goodman,15,2
+Skyler,Jesse,17,2
+Skyler,Bogdan,6,2
+Skyler,Jack Welker,5,2
+Skyler,Todd Alquist,11,2
+Skyler,Ed,6,2
+Gale Boetticher,Lydia,5,1
+Lydia,Declan,5,3
+Lydia,Kenny,6,3
+Lydia,Todd Alquist,29,3
+Lydia,Jack Welker,5,3
+Lydia,Jesse,5,3
+DEA,Jesse,17,2
+DEA,Gomez,6,2
+DEA,Jack Welker,5,2
+DEA,SAC Ramey,6,2
+DEA,Ramey,6,2
+DEA,Albuquerque,6,2
 Mike,Hector Salamanca,6,1
 Mike,Saul Goodman,6,1
 Mike,Kaylee,6,1
 Mike,Jesse,6,1
-Jesse,Skinny Pete,5,4
-Jesse,Badger,5,4
-Jesse,Saul Goodman,58,4
-Jesse,Gomez,22,4
-Jesse,Todd Alquist,46,4
-Jesse,Brock,4,4
-Jesse,Huell Babineaux,10,4
-Jesse,Kuby,6,4
-Jesse,Kenny,6,4
-Jesse,Jack Welker,76,4
-Jesse,Andrea Cantillo,35,4
-Jesse,Jane Margolis,5,4
-Jesse,SAC Ramey,5,4
-Jesse,Elliott,5,4
+Jesse,Skinny Pete,5,3
+Jesse,Badger,6,3
+Jesse,Saul Goodman,63,3
+Jesse,Gomez,22,3
+Jesse,Todd Alquist,47,3
+Jesse,Brock,5,3
+Jesse,Huell Babineaux,11,3
+Jesse,Kuby,6,3
+Jesse,Kenny,6,3
+Jesse,Jack Welker,76,3
+Jesse,Andrea Cantillo,35,3
+Jesse,Jane Margolis,5,3
+Jesse,SAC Ramey,5,3
+Jesse,Elliott,5,3
 Skinny Pete,Badger,12,0
 Badger,Saul Goodman,5,0
 Saul Goodman,Francesca,5,1
@@ -111,21 +111,21 @@ Francesca,Huell Babineaux,6,1
 Huell Babineaux,Kuby,29,1
 Huell Babineaux,Brock,6,1
 Huell Babineaux,Gomez,5,1
-Declan,Todd Alquist,12,2
-Todd Alquist,Jack Welker,23,4
-Todd Alquist,Kenny,6,4
-Todd Alquist,Gomez,5,4
-Todd Alquist,Brock,5,4
-Todd Alquist,Walt Jr.,5,4
-Todd Alquist,Andrea Cantillo,6,4
-Albuquerque,Gomez,6,3
-Albuquerque,Ed,5,3
-Gomez,Gang,6,3
-Gomez,Jack Welker,5,3
-Jack Welker,Kenny,11,3
-Jack Welker,Ramey,5,3
-Jack Welker,Ed,5,3
-Kenny,Andrea Cantillo,6,4
-Brock,Andrea Cantillo,18,4
+Declan,Todd Alquist,12,3
+Todd Alquist,Jack Welker,23,3
+Todd Alquist,Kenny,6,3
+Todd Alquist,Gomez,5,3
+Todd Alquist,Brock,5,3
+Todd Alquist,Walt Jr.,5,3
+Todd Alquist,Andrea Cantillo,6,3
+Albuquerque,Gomez,6,2
+Albuquerque,Ed,5,2
+Gomez,Gang,6,1
+Gomez,Jack Welker,5,1
+Jack Welker,Kenny,11,2
+Jack Welker,Ramey,5,2
+Jack Welker,Ed,5,2
+Kenny,Andrea Cantillo,6,3
+Brock,Andrea Cantillo,18,3
 Gretchen,Elliott,18,0
 Denny,Lawson,6,0

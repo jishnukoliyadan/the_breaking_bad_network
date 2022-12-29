@@ -1,90 +1,90 @@
 source,target,weight,community
-Walter,Jesse,501,0
-Walter,No-Doze,14,0
-Walter,Tuco Salamanca,102,0
-Walter,Skyler,205,0
-Walter,Marie,47,0
-Walter,Hank,74,0
-Walter,Gonzo,4,0
-Walter,Louis,5,0
-Walter,Gomez,6,0
-Walter,Albuquerque,5,0
-Walter,Delcavoli,11,0
-Walter,Badger,11,0
-Walter,Clovis,4,0
-Walter,Elliott,20,0
-Walter,Gretchen,46,0
-Walter,Skinny Pete,5,0
-Walter,Carmen Molina,5,0
-Walter,Spooge,20,0
-Walter,Combo,26,0
-Walter,Jane Margolis,68,0
-Walter,Saul Goodman,59,0
-Walter,Jimmy,5,0
-Walter,DEA,4,0
-Walter,Denny,5,0
-Walter,Tortuga,5,0
-Walter,Ted Beneke,10,0
-Walter,Bravenec,6,0
-Walter,Gus Fring,5,0
-Walter,Walt Jr.,11,0
-Walter,Donald Margolis,5,0
-Walter,Mike,5,0
+Walter,Jesse,514,4
+Walter,No-Doze,15,4
+Walter,Tuco Salamanca,106,4
+Walter,Skyler,205,4
+Walter,Marie,47,4
+Walter,Hank,75,4
+Walter,Gonzo,5,4
+Walter,Louis,5,4
+Walter,Gomez,6,4
+Walter,Albuquerque,5,4
+Walter,Delcavoli,11,4
+Walter,Badger,11,4
+Walter,Clovis,5,4
+Walter,Elliott,20,4
+Walter,Gretchen,46,4
+Walter,Skinny Pete,5,4
+Walter,Carmen Molina,5,4
+Walter,Spooge,20,4
+Walter,Combo,27,4
+Walter,Jane Margolis,69,4
+Walter,Saul Goodman,59,4
+Walter,Jimmy,5,4
+Walter,DEA,5,4
+Walter,Denny,5,4
+Walter,Tortuga,5,4
+Walter,Ted Beneke,10,4
+Walter,Bravenec,6,4
+Walter,Gus Fring,5,4
+Walter,Walt Jr.,11,4
+Walter,Donald Margolis,5,4
+Walter,Mike,5,4
 Jesse,Tuco Salamanca,102,1
-Jesse,Skyler,34,1
-Jesse,Hank,63,1
+Jesse,Skyler,36,1
+Jesse,Hank,65,1
 Jesse,No-Doze,5,1
 Jesse,DEA,32,1
-Jesse,Gomez,10,1
+Jesse,Gomez,11,1
 Jesse,Gonzo,6,1
 Jesse,Albuquerque,11,1
 Jesse,Badger,27,1
-Jesse,Clovis,9,1
+Jesse,Clovis,11,1
 Jesse,Wendy,6,1
 Jesse,Hector Salamanca,6,1
 Jesse,Gardiner,11,1
 Jesse,Paul,5,1
 Jesse,Jane Margolis,117,1
 Jesse,Skinny Pete,18,1
-Jesse,Combo,5,1
-Jesse,Spooge,49,1
+Jesse,Combo,6,1
+Jesse,Spooge,51,1
 Jesse,Gretchen,5,1
 Jesse,Vanco,10,1
 Jesse,Marie,5,1
 Jesse,Ted Beneke,10,1
 Jesse,Saul Goodman,21,1
 Jesse,Jimmy,5,1
-Jesse,Denny,5,1
+Jesse,Denny,6,1
 Jesse,Delcavoli,5,1
-Jesse,Donald Margolis,20,1
+Jesse,Donald Margolis,21,1
 Jesse,Mike,5,1
-Tuco Salamanca,No-Doze,5,3
-Tuco Salamanca,Gonzo,6,3
-Tuco Salamanca,Hank,59,3
-Tuco Salamanca,DEA,5,3
-Tuco Salamanca,Skyler,5,3
-Tuco Salamanca,SAC Ramey,6,3
-Tuco Salamanca,Delcavoli,5,3
-Tuco Salamanca,ASAC George Merkert,6,3
-Tuco Salamanca,Badger,5,3
-No-Doze,Gonzo,12,3
-Gonzo,Hank,5,3
-Gonzo,DEA,12,3
-Skyler,Marie,28,0
-Skyler,Hank,11,0
-Skyler,Louis,6,0
-Skyler,Albuquerque,11,0
-Skyler,DEA,5,0
-Skyler,Gretchen,18,0
-Skyler,Ted Beneke,34,0
-Skyler,Delcavoli,12,0
-Skyler,Jane Margolis,5,0
-Skyler,Donald Margolis,10,0
-Skyler,Walt Jr.,6,0
-Skyler,Bravenec,5,0
-Marie,Hank,28,0
-Marie,Jane Margolis,10,0
-Marie,Ted Beneke,5,0
+Tuco Salamanca,No-Doze,5,2
+Tuco Salamanca,Gonzo,6,2
+Tuco Salamanca,Hank,59,2
+Tuco Salamanca,DEA,5,2
+Tuco Salamanca,Skyler,5,2
+Tuco Salamanca,SAC Ramey,6,2
+Tuco Salamanca,Delcavoli,5,2
+Tuco Salamanca,ASAC George Merkert,6,2
+Tuco Salamanca,Badger,5,2
+No-Doze,Gonzo,12,2
+Gonzo,Hank,5,2
+Gonzo,DEA,12,2
+Skyler,Marie,28,4
+Skyler,Hank,11,4
+Skyler,Louis,6,4
+Skyler,Albuquerque,11,4
+Skyler,DEA,5,4
+Skyler,Gretchen,18,4
+Skyler,Ted Beneke,34,4
+Skyler,Delcavoli,12,4
+Skyler,Jane Margolis,5,4
+Skyler,Donald Margolis,10,4
+Skyler,Walt Jr.,6,4
+Skyler,Bravenec,5,4
+Marie,Hank,28,4
+Marie,Jane Margolis,10,4
+Marie,Ted Beneke,5,4
 Hank,Gomez,17,1
 Hank,DEA,23,1
 Hank,Badger,12,1
@@ -98,31 +98,31 @@ Hank,Tortuga,5,1
 Hank,Jane Margolis,5,1
 Hank,Saul Goodman,5,1
 Hank,Combo,5,1
-Gomez,Albuquerque,5,2
-Gomez,Saul Goodman,6,2
-DEA,ASAC George Merkert,6,2
-DEA,Merkert,5,2
-DEA,Albuquerque,6,2
-DEA,Badger,10,2
-DEA,Saul Goodman,6,2
-Albuquerque,Badger,6,2
-Albuquerque,Merkert,6,2
-ASAC George Merkert,SAC Ramey,6,3
-Badger,Clovis,6,4
-Badger,Soper,5,4
-Badger,Skinny Pete,18,4
-Badger,Combo,30,4
-Badger,Jane Margolis,5,4
-Badger,Getz,11,4
-Badger,Saul Goodman,5,4
-Badger,Jimmy,12,4
-Soper,Delcavoli,6,4
-Delcavoli,Bravenec,11,0
-Elliott,Gretchen,24,0
-Jane Margolis,Jimmy,5,4
-Jane Margolis,Donald Margolis,52,4
-Jane Margolis,Combo,10,4
-Skinny Pete,Combo,11,4
-Getz,Saul Goodman,6,2
-Donald Margolis,Mike,5,0
-Donald Margolis,Bravenec,5,0
+Gomez,Albuquerque,5,0
+Gomez,Saul Goodman,6,0
+DEA,ASAC George Merkert,6,0
+DEA,Merkert,5,0
+DEA,Albuquerque,6,0
+DEA,Badger,11,0
+DEA,Saul Goodman,6,0
+Albuquerque,Badger,6,0
+Albuquerque,Merkert,6,0
+ASAC George Merkert,SAC Ramey,6,2
+Badger,Clovis,6,3
+Badger,Soper,5,3
+Badger,Skinny Pete,18,3
+Badger,Combo,30,3
+Badger,Jane Margolis,5,3
+Badger,Getz,11,3
+Badger,Saul Goodman,5,3
+Badger,Jimmy,12,3
+Soper,Delcavoli,6,3
+Delcavoli,Bravenec,11,4
+Elliott,Gretchen,24,4
+Jane Margolis,Jimmy,5,3
+Jane Margolis,Donald Margolis,53,3
+Jane Margolis,Combo,10,3
+Skinny Pete,Combo,11,3
+Getz,Saul Goodman,6,0
+Donald Margolis,Mike,5,4
+Donald Margolis,Bravenec,5,4
