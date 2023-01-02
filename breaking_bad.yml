@@ -1,0 +1,21 @@
+name: breaking_bad
+channels:
+  - defaults
+dependencies:
+  - python=3.10.8
+  - pip=22.3.1
+  - pip:
+      - jupyterlab==3.5.2
+      - kaleido==0.2.1
+      - lxml==4.9.2
+      - matplotlib==3.6.2
+      - networkx==2.8.8
+      - numpy==1.24.0
+      - pandas==1.5.2
+      - plotly-express==0.4.1
+      - python-louvain==0.16
+      - pyvis==0.3.1
+      - seaborn==0.12.1
+      - spacy==3.4.4
+      - selenium==4.7.2
+      - webdriver-manager==3.8.5
