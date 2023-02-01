@@ -25,39 +25,39 @@ Set and filmed in Albuquerque, New Mexico, the series follows Walter White, an u
 - From the influential cold opens, incredible writing, sympathetic acting, and compelling plot, the series changed television forever.
 - Just take a chance on the pilot and we know you’ll be hooked!
 
-# The Project
+## The Project
 
 It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of Game of Thrones](https://datacamp.com/projects/76). While checking for already existing curated data, I failed to find the data which I needed. Thus decided to split the project into 2 parts.
 1. **Data Gathering / Web Scrapping**
 2. **Relationship Network analysis**
 
 
-# [Part 1 : Data Gathering / Web Scrapping](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb)
+## [Part 1 : Data Gathering / Web Scrapping](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb)
 
 - The first step to the project was to scrape data from [breakingbad.fandom.com](https://breakingbad.fandom.com/wiki/Breaking_Bad_(TV_series)) page.
 - A total of 62 total episodes were relased for Breaking Bad series.
 
-## What all the data interested to gather ?
+### What all the data interested to gather ?
 
 - Summary of all 62 episodes and record it based on season.
     - ie, for 6 seasons, intersted in having only 6 summary files.
 - Character list of each episodes.
 
-## Tools used for this part
+### Tools used for this part
 
 - Browser automation : [Selenium with Python](https://selenium-python.readthedocs.io/)
 - Web page parser : [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - Data cleaning : [pandas](https://pandas.pydata.org/)
 
 
-# [Part 2 : Relationship Network analysis](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb)
+## [Part 2 : Relationship Network analysis](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb)
 
 - In Part-1 using [Scraper.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb) we have generated the summaeirs all 62 episodes and character list.
 - In this part using [Relationship_Finder.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb) we will analyse the relationship between characters.
 
 <img src = 'src/imgs/combined_summary_gephi.svg' width = 75%>
 
-## How we gonna proceed this part ?
+### How we gonna proceed this part ?
 
 - From the scraped data using named entity recognition and our own defined rules 'll create a relationship dataset.
 - Over that relationship data we will perform centrality measures to find the most important character.
@@ -65,59 +65,64 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
 - We will tkae the help of visualization techniques to make the analysis more simple.
 - For further analysis, we will export the network data for the visualization in [Gephi](https://gephi.org/).
 
-## Tools used for this part
+### Tools used for this part
 
 - Natural Language Processing : [spaCy](https://spacy.io/)
 - Network Analysis : [NetworkX](https://networkx.org/)
 - Newtwork Visualization : [pyvis](https://pyvis.readthedocs.io/en/latest/index.html)
 - Data cleaning : [pandas](https://pandas.pydata.org/)
 
-# Project Directory structure
+## Project directory structure
 
 ``` bash
 ├── LICENSE
 ├── README.md
 ├── breaking_bad.yml
 ├── requirements.txt
-|
+│
 ├── Scrapper.ipynb
 ├── Relationship_Finder.ipynb
-|
+│
 ├── data
 │   ├── character_df_cleaned.csv
 │   ├── character_df.csv
 │   ├── season_nd_episode_links.txt
 │   ├── gephi_files
-│   │   ├──  # directory for storing CSV files Gephi visualisation tool
+│   │   └──  # directory for storing CSV files Gephi visualisation tool
 │   └── summaries
-│       ├── # all 6 seasons summary files stored here
+│       └── # all 6 seasons summary files stored here
+│
 ├── lib
 │   └── # pyvis created directory
+│
 └── src
-    ├── char_imp
-    │   ├── # directory to store character importance plots
-    ├── htmls
-    │   ├── # directory to store pyvis plots 
-    ├── imgs
-    │   ├── # all images used in IPYNB notebooks and README files
-    ├── plots
-    │   ├── # directory to store centrality plots 
-    └── plt_style
+│   ├── char_imp
+│   │   └── # directory to store character importance plots
+│   ├── htmls
+│   │   └── # directory to store pyvis plots 
+│   ├── imgs
+│   │   └── # all images used in IPYNB notebooks and README files
+│   ├── plots
+│   │   └── # directory to store centrality plots 
+│   └── plt_style
+│
+└── docker_files
+    └── # files related to Docker and Contributions guides
 ```
 
-# Reproducing the project
+## Reproducing the project
 
 To recreate this project on your own computer, do the following.<br>
 I have used [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) through-out the project and assuming you'll too (If not, feel free to change the below code accordingly).
 
-## 1. Using *yml* file
+### 1. Using *yml* file
 
 - Download the whole [the_breaking_bad_network](https://github.com/jishnukoliyadan/the_breaking_bad_network) directory to your local work space.
 
 ```
-wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip
-unzip the_breaking_bad_network.zip
-cd the_breaking_bad_network
+wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip -O the_breaking_bad_network-master.zip
+unzip the_breaking_bad_network-master.zip
+cd the_breaking_bad_network-master
 ```
 
 - Once we are in **the_breaking_bad_network** directory, lets create conda environment and launch JupyterLab
@@ -128,14 +133,14 @@ conda activate breaking_bad
 jupyter-lab
 ```
 
-## 2. Using *requirements.txt* file
+### 2. Using *requirements.txt* file
 
 - Download the whole [the_breaking_bad_network](https://github.com/jishnukoliyadan/the_breaking_bad_network) directory to your local work space.
 
 ```
-wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip
-unzip the_breaking_bad_network.zip
-cd the_breaking_bad_network
+wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip -O the_breaking_bad_network-master.zip
+unzip the_breaking_bad_network-master.zip
+cd the_breaking_bad_network-master
 ```
 
 - Let's create conda environment and activate it.
@@ -151,8 +156,20 @@ conda activate breaking_bad
 pip install -r requirements.txt --upgrade
 jupyter-lab
 ```
+### 3. Using *Docker* image
 
-# Reference & Credits
+<img src = 'docker_files/dockerhub_view.png'>
+
+We can use the [docker image](https://hub.docker.com/r/jishnukoliyadan/breaking-bad-network) for re-creating this project. A detailed explanation on how to use docker image can be found in the **[docker guide](docker_files/Docker_Guide.md)**.
+
+
+## Contributing to the project
+
+All contributions, bug reports, bug fixes, documentation improvements, and enhancements are welcome.
+
+A detailed overview on how to contribute can be found in the **[contributing guide](docker_files/Contribution_Guide.md)**.
+
+## Reference & Credits
 
 - Official documentations of all libraries
 - [IMDb](https://www.imdb.com/title/tt0903747/), [Rotten Tomatoes](https://www.rottentomatoes.com/tv/breaking_bad), [Wikipedia](https://www.wikipedia.org/)
@@ -163,6 +180,6 @@ jupyter-lab
 - [Translating Networks: Assessing Correspondence Between Network Visualisation and Analytics](https://hal.archives-ouvertes.fr/halshs-02179024/)
 - [pijamasurf.com](pijamasurf.com), [usmagazine.com](usmagazine.com)
 
-# License
+## License
 
-The license can be found in the [LICENSE](LICENSE) file.
+The license can be found in the [LICENSE](LICENSE) file.	

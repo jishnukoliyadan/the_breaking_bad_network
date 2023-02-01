@@ -1,4 +1,4 @@
-pip=22.3.1
+pip==22.3.1
 jupyterlab==3.5.2
 kaleido==0.2.1
 lxml==4.9.2
