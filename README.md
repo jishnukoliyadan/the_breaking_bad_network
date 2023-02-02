@@ -43,6 +43,13 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
     - ie, for 6 seasons, intersted in having only 6 summary files.
 - Character list of each episodes.
 
+<div style="text-align:center;">
+<a href = 'https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/GitHub_View_Source.svg' width = 24%></a>
+<a href = 'https://nbviewer.org/github/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/NbViwer_View_In.svg' width = 24%></a>
+<a href = 'https://colab.research.google.com/github/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/Colab_Run_In.svg' width = 24%></a>
+<a href = 'https://www.kaggle.com/code/jishnukoliyadan/data-collection-scrapper' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/Kaggle_View_On.svg' width = 24%></a>
+</div>
+
 ### Tools used for this part
 
 - Browser automation : [Selenium with Python](https://selenium-python.readthedocs.io/)
@@ -64,6 +71,13 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
 - Using community detection, we will try to find-out what all communities are present and leader of those clans.
 - We will tkae the help of visualization techniques to make the analysis more simple.
 - For further analysis, we will export the network data for the visualization in [Gephi](https://gephi.org/).
+
+<div style="text-align:center;">
+<a href = 'https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/GitHub_View_Source.svg' width = 24%></a>
+<a href = 'https://nbviewer.org/github/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/NbViwer_View_In.svg' width = 24%></a>
+<a href = 'https://colab.research.google.com/github/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/Colab_Run_In.svg' width = 24%></a>
+<a href = 'https://www.kaggle.com/code/jishnukoliyadan/relationship-finder-network-analysis' target = '_blank'><img src = 'https://raw.githubusercontent.com/jishnukoliyadan/usefull_items/master/svgs/Kaggle_View_On.svg' width = 24%></a>
+</div>
 
 ### Tools used for this part
 
